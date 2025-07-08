@@ -1,1 +1,190 @@
 # YoungPy11.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | Zhejiang University · Math & Applied Math 2024</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --text: #1f2937;
+      --accent: #2563eb;
+      --card-bg: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 2rem;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    header h1 { font-size: 1.25rem; font-weight: 700; }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--text);
+    }
+    nav a:hover { color: var(--accent); }
+    .hero {
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg,#2563eb,#7c3aed);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity .25s;
+    }
+    .btn:hover { opacity: 0.85; }
+    section {
+      max-width: 960px;
+      margin: auto;
+      padding: 4rem 1.5rem;
+    }
+    h3.section-title {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    h3.section-title::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 48px;
+      height: 3px;
+      background: var(--accent);
+    }
+    ul.square {
+      list-style: square inside;
+      margin-left: 1rem;
+    }
+    .card-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 1.25rem 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform .25s;
+    }
+    .card:hover { transform: translateY(-4px); }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ZJU · Math & Applied Math '24</h1>
+    <nav>
+      About
+      Courses
+      Interests
+      Contact
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <h2>Hi, I'm a Mathematics & Applied Mathematics student at Zhejiang University</h2>
+    <p style="max-width:600px">Passionate about turning rigorous mathematical theory into practical solutions— from machine learning and large language models to image processing.</p >
+    Let's connect
+  </section>
+
+  <section id="about">
+    <h3 class="section-title">About Me</h3>
+    <p>📚 Zhejiang University Class of 2024 · Mathematics & Applied Mathematics.<br>
+       🚀 Currently diving into <strong>Abstract Algebra</strong>, <strong>Ordinary Differential Equations</strong>, and <strong>Multivariable Calculus</strong>.<br>
+       🤖 Enthusiast of AI & Applied Math: Machine Learning, Deep Learning, NLP, LLMs, Image Processing.<br>
+       🧮 I enjoy exploring pure math too, even if it's not my strongest suit—growth is the goal!</p >
+  </section>
+
+  <section id="courses">
+    <h3 class="section-title">Academic Journey</h3>
+    <div class="card-list">
+      <div class="card"><h4>Completed</h4>
+        <ul class="square">
+          <li>Mathematical Analysis</li>
+          <li>Linear Algebra</li>
+          <li>Point Set Topology</li>
+          <li>Analytic Geometry</li>
+          <li>Intro to Artificial Intelligence</li>
+        </ul>
+      </div>
+      <div class="card"><h4>Learning Now</h4>
+        <ul class="square">
+          <li>Abstract Algebra</li>
+          <li>Ordinary Differential Equations</li>
+          <li>Multivariable Calculus</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="interests">
+    <h3 class="section-title">Research & Tech Interests</h3>
+    <div class="card-list">
+      <div class="card"><h4>Machine / Deep Learning</h4>
+        <p>Building models that learn from data to unlock predictive power and insights.</p ></div>
+      <div class="card"><h4>NLP & LLMs</h4>
+        <p>Exploring language models that understand and generate human-level text.</p ></div>
+      <div class="card"><h4>Image Processing</h4>
+        <p>Mathematical tools to enhance, interpret and restore visual information.</p ></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3 class="section-title">Contact</h3>
+    <p>📧 Email: <br>
+       🤝 Open to collaboration, discussion, and mutual growth!</p >
+  </section>
+
+  <footer>
+    © <span id="year"></span> Zhejiang University · Math & Applied Math.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
