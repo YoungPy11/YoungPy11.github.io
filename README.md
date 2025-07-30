@@ -7,7 +7,6 @@
     <meta name="keywords" content="数学,人工智能,浙江大学">
     <title>YoungPy11的个人主页</title>
     <style>
-
         /* 全局样式 */
         * {
             margin: 0;
@@ -87,7 +86,6 @@
             max-width: 100%;
             height: auto;
         }
-
         
         /* 头部样式 */
         header {
@@ -135,7 +133,6 @@
             cursor: pointer;
             font-size: 1.5rem;
         }
-
         
         /* 主页横幅 */
         .hero {
@@ -159,7 +156,6 @@
             max-width: 700px;
             margin: 0 auto 30px;
         }
-
         
         /* 关于我 */
         .about {
@@ -186,7 +182,6 @@
             width: 30%;
             color: var(--primary-color);
         }
-
         
         /* 学术 */
         .tabs {
@@ -246,7 +241,6 @@
             position: absolute;
             left: 0;
         }
-
         
         /* 兴趣 */
         .interests {
@@ -299,7 +293,6 @@
             position: absolute;
             left: 0;
         }
-
         
         /* 联系 */
         .contact-container {
@@ -371,7 +364,6 @@
         button:hover {
             background-color: var(--accent-color);
         }
-
         
         /* 页脚 */
         footer {
@@ -407,7 +399,6 @@
         .back-to-top:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
-
         
         /* 响应式设计 */
         @media (max-width: 768px) {
@@ -472,8 +463,8 @@
     <!-- 主页横幅 -->
     <section class="hero" id="hero">
         <div class="container">
-            <h1>你好，我是YoungPy11</h1>
-            <p>浙江大学数学与应用数学专业大二学生，热衷于应用数学与人工智能的交叉研究</p>
+            <h1>你好，我是Young</h1>
+            <p>浙江大学数学与应用数学专业大二学生，对应用数学与人工智能的交叉研究感兴趣</p>
         </div>
     </section>
 
@@ -515,30 +506,51 @@
                 <button class="tab-button" data-tab="planned">计划课程</button>
                 
                 <div class="tab-content active" id="completed">
-                    <h3>已修课程</h3>
+                    <h3>主要已修课程</h3>
                     <ul class="course-list">
-                        <li>高等数学 I, II</li>
-                        <li>线性代数</li>
-                        <li>概率论与数理统计</li>
-                        <li>数据结构</li>
-                        <li>面向对象程序设计(Java)</li>
+                        <li>数学分析 I, II</li>
+                        <li>高等代数与解析几何Ⅰ,Ⅱ</li>
+                        <li>点集拓扑</li>
+                        <li>大学物理(甲)Ⅰ</li>
+                        <li>人工智能基础（A）</li>
                         <li>Python编程基础</li>
-                        <li>机器学习导论</li>
+                        <li>大学英语Ⅳ</li>
                     </ul>
                 </div>
                 
                 <div class="tab-content" id="current">
-                    <h3>在修课程</h3>
+                    <h3>主要在修课程(本学期)</h3>
                     <ul class="course-list">
                         <li>抽象代数</li>
-                        <li>数值分析</li>
-                        <li>深度学习</li>
+                        <li>常微分方程</li>
+                        <li>数学分析Ⅲ</li>
+                        <li>概率论</li>
+                        <li>大学物理(甲)Ⅱ</li>
+                        <li>英美报刊选读</li>
                     </ul>
                 </div>
                 
                 <div class="tab-content" id="planned">
-                    <h3>计划课程</h3>
-                    <p>待补充...</p>
+                    <h3>主要计划课程(先画个饼，毕业前也未必学得完2333~)</h3>
+                    <ul class="course-list">
+                        <li>数理统计</li>
+                        <li>数据结构与算法</li>
+                        <li>c/c++语言*(自学)</li>
+                        <li>复变函数</li>
+                        <li>实变函数</li>
+                        <li>泛函分析</li>
+                        <li>科学计算</li>
+                        <li>偏微分方程</li>
+                        <li>优化实用算法</li>
+                        <li>随机过程</li>
+                        <li>数学建模(H)</li>
+                        <li>数学软件</li>
+                        <li>渐近法与摄动理论</li>
+                        <li>数据建模与分析</li>
+                        <li>微分方程数值解</li>
+                        <li>人工神经网络模型与算法</li>
+                        <li>控制理论基础</li>
+                        <li>计算机图形学</li>
                 </div>
             </div>
         </div>
@@ -548,14 +560,14 @@
     <section class="interests" id="interests">
         <div class="container">
             <h2>兴趣</h2>
-            <p>在学术之外，我也有很多兴趣爱好，这些活动让我的生活更加丰富多彩。</p>
+            <p>“人无癖不可交，因其无深情也；人无疵不可交，因其无真气也。”</p>
             
             <div class="interest-grid">
                 <div class="interest-card">
                     <h3><i class="fas fa-running"></i> 运动</h3>
                     <ul class="interest-list">
-                        <li>跑步 (每周10-15公里)</li>
-                        <li>篮球 (校队替补)</li>
+                        <li>跑步 ()</li>
+                        <li>篮球 ()</li>
                     </ul>
                 </div>
                 
@@ -571,25 +583,24 @@
                 <div class="interest-card">
                     <h3><i class="fas fa-film"></i> 影视</h3>
                     <ul class="interest-list">
-                        <li>动漫番剧 (9/10分：《进击的巨人》)</li>
-                        <li>科幻电影 (8.5/10分：《星际穿越》)</li>
+                        <li>动漫番剧 ()</li>
+                        <li>科幻电影 ()</li>
                     </ul>
                 </div>
                 
                 <div class="interest-card">
                     <h3><i class="fas fa-book"></i> 阅读</h3>
                     <ul class="interest-list">
-                        <li>科幻小说 (刘慈欣、阿西莫夫)</li>
-                        <li>意识流文学 (普鲁斯特、乔伊斯)</li>
+                        <li>科幻小说 (刘慈欣、《科幻世界》)</li>
+                        <li>奇幻、意识流文学 ()</li>
                     </ul>
                 </div>
                 
                 <div class="interest-card">
                     <h3><i class="fas fa-gamepad"></i> 游戏</h3>
                     <ul class="interest-list">
-                        <li>《塞尔达传说：旷野之息》</li>
-                        <li>《赛博朋克2077》</li>
-                        <li>《文明6》</li>
+                        <li>《重返未来：1999》</li>
+                        <li>《鸣潮》</li>
                     </ul>
                 </div>
             </div>
@@ -600,21 +611,17 @@
     <section class="contact" id="contact">
         <div class="container">
             <h2>联系我</h2>
-            <p>如果你对我的研究感兴趣或有任何问题，欢迎通过以下方式联系我。</p>
+            <p>如果你对我的学习方向＆爱好感兴趣或有任何问题＆补充，欢迎通过以下方式联系我。</p>
             
             <div class="contact-container">
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fab fa-qq"></i>
-                        <span>QQ: 123456789</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-weixin"></i>
-                        <span>微信: YoungPy11 (点击显示二维码)</span>
+                        <span>QQ: 2483211689</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <a href="mailto:youngpy11@example.com">youngpy11@example.com</a>
+                        <a href="mailto:youngsailor@zju.edu.cn">youngsailor@zju.edu.cn</a>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-github"></i>
@@ -626,7 +633,7 @@
                     <h3>留言</h3>
                     <form id="contactForm">
                         <div class="form-group">
-                            <label for="name">姓名</label>
+                            <label for="name">如何称呼您</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
