@@ -136,7 +136,7 @@
         
         /* 主页横幅 */
         .hero {
-            background-image: linear-gradient(rgba(26, 54, 93, 0.8), rgba(26, 54, 93, 0.8)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-image: linear-gradient(rgba(26, 54, 93, 0.8), rgba(26, 54, 93, 0.8)), url('images/background.jpg');
             background-size: cover;
             background-position: center;
             color: white;
@@ -551,6 +551,7 @@
                         <li>人工神经网络模型与算法</li>
                         <li>控制理论基础</li>
                         <li>计算机图形学</li>
+                    </ul>    
                 </div>
             </div>
         </div>
@@ -631,7 +632,9 @@
                 
                 <div class="contact-form">
                     <h3>留言</h3>
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formspree.io/f/xldlldkp" method="POST" target="_blank">
+                        <input type="hidden" name="_subject" value="来自YoungPy11网站的新留言">
+                        <input type="hidden" name="_replyto" value="2483211689@qq.com">
                         <div class="form-group">
                             <label for="name">如何称呼您</label>
                             <input type="text" id="name" name="name" required>
@@ -701,13 +704,6 @@
                 top: 0,
                 behavior: 'smooth'
             });
-        });
-        
-        // 表单提交
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('感谢您的留言！我会尽快回复您。');
-            this.reset();
         });
     </script>
 </body>
