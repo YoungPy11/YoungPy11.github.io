@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程详情 - YoungPy11的个人主页</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">YoungPy11</div>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="../index.html#about">关于我</a></li>
+                    <li><a href="../index.html#academic">学术</a></li>
+                    <li><a href="../index.html#interests">兴趣</a></li>
+                    <li><a href="../index.html#contact">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="course-detail">
+        <div class="container">
+            <h1>课程名称</h1>
+            <h1>数学分析Ⅰ＆Ⅱ(不包括多元微积分学)</h1>
+            <div class="course-meta">
+                <span><i class="fas fa-calendar-alt"></i> 学习时间: 2024年9月至2025年6月</span>
+            </div>
+            
+            <div class="course-content">
+                <h2>学习体会</h2>
+                <p>（根据个人学习感受整理）本人私以为数学分析应该算是数学系专业课（数学课）里面入门最为简单的一门了，当然我这里的入门指的是搞懂每个概念和定理，不包括背诵掌握每个证明，另外入门简单并不意味着熟练精通很简单。
+                本人学习数学分析之前曾在高考完之后自己看了一些同济版的高等数学，对于把握数学分析大概要学一些什么内容有点帮助。
+                开学后正式开始学习数学分析，使用的是陈纪修那一版，先学习实数系六大基本定理，这部分内容十分基础，但是掌握这六大定理及其互推对于以后的数学分析（乃至点集拓扑）是很有帮助的。然后正式开始引入极限，这是数学分析的基石，后续的微分 积分 级数本质上都是某种极限过程，具体的知识就不展开写了，这里分享本人从各种地方学习/总结到的几个数学分析的思想方法：
+                1.夹逼法则：
+                本人最初见识到这种方法的威力之大是在大一上请教数分老师一道在当时看来比较刁钻的极限时看到的他的解答：｛image｝
+                <img src="/images/math-analysis-images/limit-Q.jpg">
+                <img src="/images/math-analysis-images/limit-A.jpg">
+                这一法则还有许多推广，例如：为了一般性，不妨考虑偏序关系“《”（此符号表示偏序，包含相等的情况）则有 A=B当且仅当A《 B 且 A 》B，这看起来显然，却是点集拓扑一些关于集合关系等的证明中的关键思想。又例如：所谓“夹逼法则的推广形式”<img src="/images/math-analysis-images/夹逼法则推广.jpg">
+                2.分段估计（或称分段控制）：最初意识到这种思想是在大一上完假期看裴礼文的求极限部分时，现在想想其实这种方法真可谓是无处不在，例如：“1.夹逼法则”中提到的那道求极限、toeplitz定理证明、控制收敛定理证明、ODE中...证明等等。
+                3.估阶，这具体是指什么可以体会一下b站up主———@泰勒猫爱丽丝 的视频：<a href="https://www.bilibili.com/video/BV1zK411675x/?spm_id_from=333.337.search-card.all.click&vd_source=23288efcb340a1a96c02b33de8a83997" target="_blank">【估个阶吧1】递推数列估阶：从 Stolz 公式到微分方程比拟法</a>
+                4.取子列/对角线法则
+                5.逐步逼近
+                数学分析一言蔽之，就是在学习如何使用epsilon语言说话。</p>
+                <h2>相关资料(个人笔记部分主要用于本人记录自己的学习经历和本人参考，读者酌情参考)</h2>
+                <ul>
+                    <li><a href="pdfs/math-analysis-pdfs/数分板书及习题课.pdf">个人笔记：</a></li>
+                    <li><a href="pdfs/math-analysis-pdfs/数分二总结.pdf">个人笔记：</a></li>
+                    <li><a href="pdfs/math-analysis-pdfs/数分II部分题型疏理.pdf">个人笔记：</a></li>
+                    <li><a href="pdfs/math-analysis-pdfs/数学分析I.pdf">个人笔记：</a></li>
+                    <li><a href="pdfs/math-analysis-pdfs/Fourier级数相关.pdf">个人笔记：</a></li>
+                    <li><a href="https://terrytao.wordpress.com/wp-content/uploads/2010/02/epsilon.pdf">(较难)推荐论文———Terence TaoAn， epsilon of room: pages from year three of a mathematical blog</a></li>
+                </ul>
+            </div>
+            
+            <a href="../index.html#academic" class="back-link"><i class="fas fa-arrow-left"></i> 返回课程列表</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    &copy; 2023 YoungPy11 版权所有 | 最后更新时间: <span id="lastUpdate"></span>
+                </div>
+                <div class="back-to-top" id="backToTop">
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
